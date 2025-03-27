@@ -1,0 +1,30 @@
+unit CadastroItem;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, ChildWin, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Mask, Vcl.DBCtrls, Vcl.WinXCtrls;
+
+type
+  TFCadastroItem = class(TMDIChild)
+    pnFundo: TPanel;
+    RelativePanel1: TRelativePanel;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FCadastroItem: TFCadastroItem;
+
+implementation
+
+{$R *.dfm}
+
+end.

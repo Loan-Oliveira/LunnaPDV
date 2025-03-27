@@ -1,0 +1,33 @@
+unit DataModule;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB;
+
+type
+  TDataModuleLunna = class(TDataModule)
+    Lunna: TADOConnection;
+    spValidaUsuario: TADOStoredProc;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModuleLunna: TDataModuleLunna;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+procedure TDataModuleLunna.DataModuleCreate(Sender: TObject);
+begin
+  Lunna.State;
+end;
+
+end.

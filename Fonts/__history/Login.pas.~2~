@@ -1,0 +1,71 @@
+unit Login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.pngimage, Vcl.ExtCtrls,
+  Vcl.StdCtrls, Vcl.Mask, Vcl.ComCtrls, Vcl.BaseImageCollection,
+  Vcl.ImageCollection, System.ImageList, Vcl.ImgList, Vcl.VirtualImageList;
+
+type
+  TFLogin = class(TForm)
+    Panel1: TPanel;
+    Image1: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    edUsuario: TLabeledEdit;
+    edSenha: TButtonedEdit;
+    btEntrar: TButton;
+    StatusBar1: TStatusBar;
+    VirtualImageList1: TVirtualImageList;
+    ilImagens: TImageCollection;
+    procedure btEntrarClick(Sender: TObject);
+    procedure edSenhaRightButtonClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FLogin: TFLogin;
+  FUsuario : String;
+
+implementation
+
+{$R *.dfm}
+
+uses DataModule;
+
+procedure TFLogin.btEntrarClick(Sender: TObject);
+begin
+  with DataModuleLunna.spValidaUsuario do
+  begin
+    Parameters[1].Value := edUsuario.Text;
+    Parameters[2].Value := edSenha.Text;
+    ExecProc;
+
+    if Parameters[0].Value then
+    begin
+      FUsuario := 'TESTE';
+      Self.ModalResult := mrOk;
+    end
+    else
+    begin
+      MessageDlg('Usuário e senha não conferem.', mtError,
+      [mbOk], 0, mbOk);
+    end;
+  end;
+
+end;
+
+procedure TFLogin.edSenhaRightButtonClick(Sender: TObject);
+begin
+  if edSenha.PasswordChar = #0 then
+    edSenha.PasswordChar := '*'
+  else
+    edSenha.PasswordChar := #0;
+end;
+
+end.

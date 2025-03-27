@@ -1,0 +1,86 @@
+unit CadastroItem;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, ChildWin, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Mask, Vcl.DBCtrls, Vcl.WinXCtrls, Data.Win.ADODB, Data.DB, Data.FMTBcd,
+  Datasnap.DBClient, Data.SqlExpr, Vcl.Buttons, Vcl.Grids, Vcl.DBGrids,
+  Vcl.Imaging.pngimage;
+
+type
+  TFCadastroItem = class(TMDIChild)
+    pnFundo: TPanel;
+    qryCadItem: TADOQuery;
+    dsCadItem: TDataSource;
+    RelativePanel1: TRelativePanel;
+    edCodInterno: TDBEdit;
+    edDescricao: TDBEdit;
+    edFabricante: TDBEdit;
+    edEspecificacao: TDBEdit;
+    edQtdMin: TDBEdit;
+    edQtdMax: TDBEdit;
+    edValidade: TDBEdit;
+    edCusto: TDBEdit;
+    edVenda: TDBEdit;
+    edDescontoMax: TDBEdit;
+    edUnidadeMedida: TDBEdit;
+    edDiasGarantia: TDBEdit;
+    cbPerecivel: TDBCheckBox;
+    cbKit: TDBCheckBox;
+    Image1: TImage;
+    btFoto: TButton;
+    DBGrid1: TDBGrid;
+    nvControleGrid: TDBNavigator;
+    qryCadItemT002_NR_COD: TAutoIncField;
+    qryCadItemT002_CA_DESCRICAO: TStringField;
+    qryCadItemT002_CA_FABRICANTE: TStringField;
+    qryCadItemT002_CA_ESPECIFICACAO: TStringField;
+    qryCadItemT002_NR_QTD_MIN: TFloatField;
+    qryCadItemT002_NR_QTD_MAX: TFloatField;
+    qryCadItemT002_DT_VALIDADE: TDateTimeField;
+    qryCadItemT002_LO_PERECIVEL: TBooleanField;
+    qryCadItemT002_MO_CUSTO: TBCDField;
+    qryCadItemT002_MO_VENDA: TBCDField;
+    qryCadItemT002_LO_KIT: TBooleanField;
+    qryCadItemT002_NR_GARANTIA: TIntegerField;
+    qryCadItemT003_CA_DESCRICAO: TStringField;
+    qryCadItemT002_NR_DESCONTO_MAX: TFloatField;
+    qryCadItemT002_CA_FOTO: TStringField;
+    Label1: TLabel;
+    label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FCadastroItem: TFCadastroItem;
+
+implementation
+
+{$R *.dfm}
+
+uses DataModule;
+
+
+procedure TFCadastroItem.FormCreate(Sender: TObject);
+begin
+  inherited;
+  qryCadItem.Open;
+end;
+
+end.

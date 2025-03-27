@@ -1,0 +1,40 @@
+object DataModuleLunna: TDataModuleLunna
+  OnCreate = DataModuleCreate
+  Height = 480
+  Width = 640
+  object Lunna: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Password=lunna*.0;Persist Security Info=True' +
+      ';User ID=Lunna;Initial Catalog=LUNNA;Data Source=Loan\SQLEXPRESS'
+    DefaultDatabase = 'LUNNA'
+    Provider = 'SQLOLEDB.1'
+    Left = 8
+    Top = 8
+  end
+  object spValidaUsuario: TADOStoredProc
+    Connection = Lunna
+    ProcedureName = 'dbo.ValidaSenhaUsuario'
+    Parameters = <
+      item
+        Name = '@RETURN_VALUE'
+        DataType = ftInteger
+        Direction = pdReturnValue
+        Precision = 10
+      end
+      item
+        Name = '@T001_USUARIO'
+        Attributes = [paNullable]
+        DataType = ftString
+        Size = 100
+      end
+      item
+        Name = '@T001_SENHA'
+        Attributes = [paNullable]
+        DataType = ftString
+        Size = 100
+      end>
+    Left = 32
+    Top = 72
+  end
+end

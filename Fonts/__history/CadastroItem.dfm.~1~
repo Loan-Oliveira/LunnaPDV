@@ -1,0 +1,94 @@
+inherited FCadastroItem: TFCadastroItem
+  Caption = 'Cadastro de produtos'
+  ClientHeight = 573
+  ClientWidth = 1003
+  StyleElements = [seFont, seClient, seBorder]
+  ExplicitWidth = 1019
+  ExplicitHeight = 612
+  TextHeight = 15
+  inherited Memo1: TMemo
+    Width = 1003
+    Height = 573
+    StyleElements = [seFont, seClient, seBorder]
+  end
+  object pnFundo: TPanel
+    Left = 0
+    Top = 0
+    Width = 1003
+    Height = 573
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 1
+    ExplicitLeft = 448
+    ExplicitTop = 368
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object RelativePanel1: TRelativePanel
+      Left = 0
+      Top = 0
+      Width = 1003
+      Height = 573
+      ControlCollection = <
+        item
+          Control = DBEdit1
+          AlignBottomWithPanel = False
+          AlignHorizontalCenterWithPanel = False
+          AlignLeftWithPanel = False
+          AlignRightWithPanel = False
+          AlignTopWithPanel = False
+          AlignVerticalCenterWithPanel = False
+        end
+        item
+          Control = DBEdit2
+          AlignBottomWithPanel = False
+          AlignHorizontalCenterWithPanel = False
+          AlignLeftWithPanel = False
+          AlignRightWithPanel = False
+          AlignTopWithPanel = False
+          AlignVerticalCenterWithPanel = False
+        end
+        item
+          Control = DBEdit3
+          AlignBottomWithPanel = False
+          AlignHorizontalCenterWithPanel = False
+          AlignLeftWithPanel = False
+          AlignRightWithPanel = False
+          AlignTopWithPanel = False
+          AlignVerticalCenterWithPanel = False
+        end>
+      Align = alClient
+      TabOrder = 0
+      ExplicitLeft = 336
+      ExplicitTop = 240
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      DesignSize = (
+        1003
+        573)
+      object DBEdit1: TDBEdit
+        Left = 856
+        Top = 520
+        Width = 121
+        Height = 23
+        Anchors = []
+        TabOrder = 0
+      end
+      object DBEdit2: TDBEdit
+        Left = 112
+        Top = 64
+        Width = 121
+        Height = 23
+        Anchors = []
+        TabOrder = 1
+      end
+      object DBEdit3: TDBEdit
+        Left = 432
+        Top = 288
+        Width = 121
+        Height = 23
+        Anchors = []
+        TabOrder = 2
+      end
+    end
+  end
+end

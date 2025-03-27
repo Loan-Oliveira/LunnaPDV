@@ -1,0 +1,37 @@
+unit DataModule;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB,
+  Vcl.BaseImageCollection, Vcl.ImageCollection, System.ImageList, Vcl.ImgList,
+  Vcl.VirtualImageList;
+
+type
+  TDataModuleLunna = class(TDataModule)
+    Lunna: TADOConnection;
+    spValidaUsuario: TADOStoredProc;
+    Virtualizacao: TVirtualImageList;
+    Imagens: TImageCollection;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModuleLunna: TDataModuleLunna;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+procedure TDataModuleLunna.DataModuleCreate(Sender: TObject);
+begin
+  Lunna.State;
+end;
+
+end.

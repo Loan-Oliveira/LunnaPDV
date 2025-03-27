@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/08/31 18:47:01.000.628,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Lunna.dproj=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\MDIAPP.dproj</Transaction>
+    <Transaction>2024/08/31 18:48:18.000.864,=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas</Transaction>
+    <Transaction>2024/08/31 18:50:25.000.933,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Home.dfm=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.dfm</Transaction>
+    <Transaction>2024/08/31 18:50:25.000.933,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Home.pas=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas</Transaction>
+    <Transaction>2024/08/31 22:07:33.000.021,=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas</Transaction>
+    <Transaction>2024/08/31 22:08:15.000.642,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Login.pas=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas</Transaction>
+    <Transaction>2024/08/31 22:08:15.000.642,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Login.dfm=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.dfm</Transaction>
+    <Transaction>2024/09/01 02:59:44.000.259,=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas</Transaction>
+    <Transaction>2024/09/01 04:49:48.000.174,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Fonts\DataModule.pas</Transaction>
+    <Transaction>2024/09/01 04:49:48.000.174,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.dfm=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Fonts\DataModule.dfm</Transaction>
+    <Transaction>2024/09/02 21:22:50.000.504,=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Fonts\Abertura.pas</Transaction>
+    <Transaction>2024/09/03 21:10:55.000.897,=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas</Transaction>
+    <Transaction>2024/09/03 21:21:20.000.873,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Fonts\CadastroItem.pas=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas</Transaction>
+    <Transaction>2024/09/03 21:21:20.000.873,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Fonts\CadastroItem.dfm=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.dfm</Transaction>
+    <Transaction>2024/09/04 20:49:13.000.175,=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas</Transaction>
+    <Transaction>2024/09/04 20:54:39.000.363,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Fonts\LunnaConstantes.pas</Transaction>
+    <Transaction>2024/09/04 21:56:59.000.336,=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas</Transaction>
+    <Transaction>2024/09/04 22:01:46.000.867,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.pas=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Fonts\Result.pas</Transaction>
+    <Transaction>2024/09/04 22:01:46.000.868,C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Unit1.dfm=C:\Users\low_f\Documents\Embarcadero\Studio\Projects\Lunna\Fonts\Result.dfm</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Fonts"/>
+    <File Path="Fonts\Abertura.pas"/>
+    <File Path="Fonts\Abertura.dfm"/>
+    <File Path="Fonts\about.pas"/>
+    <File Path="Fonts\about.dfm"/>
+    <File Path="Fonts\CadastroItem.pas"/>
+    <File Path="Fonts\CadastroItem.dfm"/>
+    <File Path="Fonts\ChildWin.pas"/>
+    <File Path="Fonts\ChildWin.dfm"/>
+    <File Path="Fonts\DataModule.pas"/>
+    <File Path="Fonts\Home.pas"/>
+    <File Path="Fonts\Home.dfm"/>
+    <File Path="Fonts\Login.pas"/>
+    <File Path="Fonts\Login.dfm"/>
+    <File Path="Fonts\LunnaConstantes.pas"/>
+    <File Path="Fonts\Main.pas"/>
+    <File Path="Fonts\Result.pas"/>
+    <File Path="Fonts\Result.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
